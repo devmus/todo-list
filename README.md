@@ -7,5 +7,8 @@
 Vite - React & Vanilla JS
 Axiom - API (https://random-todos.azurewebsites.net/api-docs/)
 Tabler - Icons for react
+GH-pages - Deployment for Vite
 
 ### Deployment URL:
+
+https://devmus.github.io/todo-list/
