@@ -1,42 +1,142 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body{
+  background-image: url("../src/assets/backg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+}
+
+button{
+  cursor: pointer;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.button-container{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  padding: 10px 0 0 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-container button{
+  width: 25%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgba(223, 223, 223, 0.8);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+h1{
+  background-color: rgba(180, 180, 180, 0.2);
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  padding: 10px 0;
 }
 
-.card {
-  padding: 2em;
+.todo-show-container{
+  margin: 10px 4.15%;
 }
 
-.read-the-docs {
-  color: #888;
+.todo-show-container form{
+  margin: 5px 0;
+  padding: 10px 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgba(180, 180, 180, 0.2);
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-show-container form input{
+  background-color: rgba(180, 180, 180, 0.5);
+  border-radius: 5px;
+  text-indent: 10px;
+  width:100%;
+  margin-right: 10px; 
+}
+
+.todo-list-container{
+  background-color: rgba(223, 223, 223, 0.8);
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.todo-empty{
+  padding: 10px;
+}
+
+.item-container{
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-container li{
+  list-style-type: none;
+}
+
+
+.task-done{
+  color: rgba(180, 180, 180, 0.8)
+}
+
+.delete-icon:hover{
+  color: rgba(255, 74, 74, 0.8);
+  border-radius: 100px;
+}
+
+.icon-add:hover{
+  color: rgba(0, 122, 20, 0.8);
+}
+
+.icon-status-done-true:hover{
+  color: red;
+}
+
+.icon-status-done-false:hover{
+  color: green;
+}
+
+/*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
+
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  Remove list styles (bullets/numbers)
+  in case you use it with normalize.css
+*/
+ol, ul {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
+}
+
+/* Removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
 }
