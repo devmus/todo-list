@@ -66,7 +66,7 @@ export const Todos = () => {
   }
 
   return <>
-    <h1>Todos</h1>
+    <h1>Todos List</h1>
     <div className="button-container">
       <GetTodos click={getData}/>
       <ClearTodos click={clearData}/>
@@ -82,3 +82,6 @@ export const Todos = () => {
     </div>
   </>;
 }
+
+
+localStorage.setItem("wallet", accounts);
