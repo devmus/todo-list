@@ -1,14 +1,10 @@
-## Todo-list
+### About Todo-list
+Student project in the React course. An assignment to reinforce learning of concepts like components, lifting-state-up, mapping, useState and useEffect.
 
-- Made as an assignment in the React course at Medieinstitutet Q1 of 2024.
+## Development dependencies, libraries, etc.
+- Vite (React & Vanilla JS)
+- Axiom to reach API (https://random-todos.azurewebsites.net/api-docs/)
+- Tabler (Icons used for react)
 
-# Modules used:
-
-Vite - React & Vanilla JS
-Axiom - API (https://random-todos.azurewebsites.net/api-docs/)
-Tabler - Icons for react
-GH-pages - Deployment for Vite
-
-### Deployment URL:
-
+## Deployment URL:
 https://devmus.github.io/todo-list/
